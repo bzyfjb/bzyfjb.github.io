@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bzyfjb.github.io/2023/11/15/HTB-Broker/</loc>
+    
+    <lastmod>2023-11-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bzyfjb.github.io/2023/08/22/HTB-Optimum/</loc>
     
     <lastmod>2023-08-22</lastmod>
@@ -76,85 +85,113 @@
 
   <url>
     <loc>https://bzyfjb.github.io/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://bzyfjb.github.io/tags/HTB/</loc>
-    <lastmod>2023-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bzyfjb.github.io/tags/windows/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/juicy-potato/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/nishang/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/jenkins/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/RCE/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/HTB/</loc>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/Windows/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/HFS/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/MS16032/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/Sherlock/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bzyfjb.github.io/tags/Msf/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/activeMQ/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/CVE-2023-46604/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/sudo/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/nginx/</loc>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -163,7 +200,7 @@
   
   <url>
     <loc>https://bzyfjb.github.io/categories/HTB/</loc>
-    <lastmod>2023-08-22</lastmod>
+    <lastmod>2023-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

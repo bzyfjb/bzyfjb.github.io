@@ -1,3 +1,4 @@
+https://bzyfjb.github.io/2023/11/15/HTB-Broker/
 https://bzyfjb.github.io/2023/08/22/HTB-Optimum/
 https://bzyfjb.github.io/2023/08/20/HTB-Jeeves/
 https://bzyfjb.github.io/mylist/index.html
@@ -7,15 +8,19 @@ https://bzyfjb.github.io/about/index.html
 https://bzyfjb.github.io/2023/08/17/HTB-Bounty/
 https://bzyfjb.github.io/2023/08/17/hello-world/
 https://bzyfjb.github.io/
-https://bzyfjb.github.io/tags/HTB/
 https://bzyfjb.github.io/tags/windows/
 https://bzyfjb.github.io/tags/juicy-potato/
 https://bzyfjb.github.io/tags/nishang/
 https://bzyfjb.github.io/tags/jenkins/
 https://bzyfjb.github.io/tags/RCE/
+https://bzyfjb.github.io/tags/HTB/
 https://bzyfjb.github.io/tags/Windows/
 https://bzyfjb.github.io/tags/HFS/
 https://bzyfjb.github.io/tags/MS16032/
 https://bzyfjb.github.io/tags/Sherlock/
 https://bzyfjb.github.io/tags/Msf/
+https://bzyfjb.github.io/tags/activeMQ/
+https://bzyfjb.github.io/tags/CVE-2023-46604/
+https://bzyfjb.github.io/tags/sudo/
+https://bzyfjb.github.io/tags/nginx/
 https://bzyfjb.github.io/categories/HTB/
