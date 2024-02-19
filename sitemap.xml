@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://bzyfjb.github.io/2023/11/15/HTB-Broker/</loc>
+    <loc>https://bzyfjb.github.io/HTB-Broker.html</loc>
     
     <lastmod>2023-11-15</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://bzyfjb.github.io/2023/08/22/HTB-Optimum/</loc>
+    <loc>https://bzyfjb.github.io/HTB-Optimum.html</loc>
     
     <lastmod>2023-08-22</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://bzyfjb.github.io/2023/08/20/HTB-Jeeves/</loc>
+    <loc>https://bzyfjb.github.io/HTB-Jeeves.html</loc>
     
     <lastmod>2023-08-20</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://bzyfjb.github.io/2023/08/17/HTB-Bounty/</loc>
+    <loc>https://bzyfjb.github.io/HTB-Bounty.html</loc>
     
     <lastmod>2023-08-17</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://bzyfjb.github.io/2023/08/17/hello-world/</loc>
+    <loc>https://bzyfjb.github.io/hello-world.html</loc>
     
     <lastmod>2023-08-17</lastmod>
     
@@ -113,27 +113,6 @@
   </url>
   
   <url>
-    <loc>https://bzyfjb.github.io/tags/nishang/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzyfjb.github.io/tags/jenkins/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bzyfjb.github.io/tags/RCE/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bzyfjb.github.io/tags/Windows/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -163,6 +142,27 @@
   
   <url>
     <loc>https://bzyfjb.github.io/tags/Msf/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/nishang/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/jenkins/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bzyfjb.github.io/tags/RCE/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
